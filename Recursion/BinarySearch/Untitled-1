@@ -1,0 +1,14 @@
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+  vector<int> theData = {-5, 8, 10, 12, 15, 18, 31, 42, 83};
+
+  int location = find(theData, 12); //expect index 3
+
+}
+  
