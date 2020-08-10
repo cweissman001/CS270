@@ -1,0 +1,25 @@
+#ifndef CS270_STRING
+#define CS270_STRING
+
+namespace CS270 {
+
+class string {
+  //Public methods of a string, including operators, construtors, 
+  // destructor, and other methods
+ public:
+
+
+ private:
+  //Empty constructor is a useful way to declare local string objects 
+  // you plan to initialize immediately in other class functions (like operator+), 
+  // but making it private prevents other code from creating an uninitialized string.
+  string() {};
+  //By declaring assignment private, we prevent anyone from doing it, which 
+  //  could cause problems if not implemented correctly (which is not part
+  //  of this assignment.
+  string& operator=(const string& other);
+  //Declare necessary fields here
+};
+}
+
+#endif //define CS270_STRINGmy
